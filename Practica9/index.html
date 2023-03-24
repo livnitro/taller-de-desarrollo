@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <style>
+        body{
+            animation: colores 10s infinite;
+        }
+        @keyframes colores {
+            0%{
+                background: cyan;
+            }
+            20%{
+                background: greenyellow;
+            }
+            40%{
+                background: orange;
+            }
+            60%{
+                background: pink;
+            }
+            80%{
+                background: violet;
+            }
+            100%{
+                background: cyan;
+            }
+        }
+
+        h1{
+            text-align: center;
+            padding-top: 250px;
+            font-family: Arial;
+        }
+
+        .cuadroBlanco {
+            background: #fff;
+            position: absolute;
+            animation: mueveCuadro 5s infinite;
+            text-align: center;
+        }
+
+        .gradiente {
+            width: 30px;
+            height: 30px;
+            background: rgb(255,183,245);
+            background: linear-gradient(90deg, rgba(255,183,245,1) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,1) 100%);
+        }
+
+        #cuadroBlanco1 {
+            width: 100px;
+            height: 100px;
+            left: 50px;
+        }
+
+        #cuadroBlanco2 {
+            width: 100px;
+            height: 100px;
+            left: 200px;
+        }
+
+        #cuadroNegro {
+            width: 100px;
+            height: 100px;
+            background: black;
+            position: absolute;
+            left: 350px;
+            animation: mueveNegro 2s infinite;
+        }
+
+        #cuadroMulticolor{
+            width: 100px;
+            height: 100px;
+            background: grey;
+            position: relative;
+            left: 500px;
+            animation: moverMulticolor 2s infinite;
+        }
+
+        #circulo {
+            width: 100px;
+            height: 100px;
+            left: 800px;
+            background: red;
+            position: relative;
+            border-radius: 50%;
+            animation: crece 5s infinite;
+        }
+
+        @keyframes mueveCuadro{
+            0% { top: 0px; }
+            50%  { top: 200px; }
+            100% { top: 0px; }
+        }
+
+        @keyframes mueveNegro {
+            0% { top: 0px; }
+            25% { top: 200px; }
+            50% { top: 50px; }
+            75% { top: 100px; }
+            100% { top: 0px; }
+        }
+
+        @keyframes moverMulticolor {
+            0% { top: 0px; left: 500px; background: grey; }
+            0% { top: 0px; left: 600px; background: black; }
+            0% { top: 0px; left: 700px; background: grey; }
+            0% { top: 0px; left: 600px; background: white; }
+            0% { top: 0px; left: 500px; background: grey; }
+        }
+
+        @keyframes crece {
+            0% { top: 0px; width: 100px; height: 100px; }
+            50% { top: 0px; width: 100%; height: 100%; }
+            100% { top: 0px; width: 100px; height: 100px; }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>owo crimes</h1>
+    <div id="cuadroBlanco1" class="cuadroBlanco"></div>
+    <div id="cuadroBlanco2" class="cuadroBlanco"></div>
+    <div id="cuadroNegro"></div>
+    <div id="cuadroMulticolor"></div>
+</body>
+</html>
