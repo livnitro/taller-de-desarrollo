@@ -1,4 +1,4 @@
 # taller-de-desarrollo
 trabajos y tareas del taller de desarrollo
 
-Soy Liv y este es mi github :>
+bienvid@ a mi carpetita de tareas y trabajos :>
