@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 8</title>
+    <style>
+
+        body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            width: 25%;
+            background-color: turquoise;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: palevioletred;
+            color: white;
+        }
+
+        li a:hover:not(active){
+            background-color: pink;
+            color: white;
+        }
+
+        #home {
+            margin-left: 25%;
+            height: 1000px;
+            background-color: aquamarine;
+            padding: 25px;
+
+            background: url(https://static.vecteezy.com/system/resources/thumbnails/007/229/317/small/rainbow-gradient-banner-free-vector.jpg);
+            background-repeat: repeat;
+            background-size: auto;
+        }
+
+        #articles {
+            margin-left: 25%;
+            height: 1000px;
+            background-color: burlywood;
+            padding: 25px;
+        }
+
+        #contact {
+            margin-left: 25%;
+            height: 1000px;
+            background-color: chartreuse;
+            padding: 25px;
+        }
+
+        #about {
+            margin-left: 25%;
+            height: 1000px;
+            background-color: darkorange;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <a href="#home">
+                Inicio
+            </a>
+        </li>
+        <li>
+            <a  class="active" href="#articles">
+                Artículos
+            </a>
+        </li>
+        <li>
+            <a href="#contact">
+                Contacto
+            </a>
+        </li>
+        <li>
+            <a href="#about">
+                Acerca de
+            </a>
+        </li>
+    </ul>
+
+    <div id="home">
+        <h2>INICIO</h2>
+        <h3>Subtitulo</h3>
+        <p>Casa
+        </p>
+    </div>
+
+    <div id="articles">
+        <h2>ARTICULOS</h2>
+        <h3>Subtitulo</h3>
+        <p>Articuno
+        </p>
+    </div>
+    
+    <div id="contact">
+        <h2>CONTACTO</h2>
+        <h3>Subtitulo</h3>
+        <p>no.
+        </p>
+    </div>
+
+
+    <div id="about">
+        <h2>ACERCA DE</h2>
+        <h3>Subtitulo</h3>
+        <p>???
+        </p>
+    </div>
+
+
+</body>
+</html>
