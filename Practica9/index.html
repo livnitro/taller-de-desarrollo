@@ -74,10 +74,10 @@
         #cuadroMulticolor{
             width: 100px;
             height: 100px;
-            background: grey;
+            background: pink;
             position: relative;
-            left: 500px;
-            animation: moverMulticolor 2s infinite;
+            left: 475px;
+            animation: mueveMulticolor 2s infinite;
         }
 
         #circulo {
@@ -104,12 +104,12 @@
             100% { top: 0px; }
         }
 
-        @keyframes moverMulticolor {
-            0% { top: 0px; left: 500px; background: grey; }
-            0% { top: 0px; left: 600px; background: black; }
-            0% { top: 0px; left: 700px; background: grey; }
-            0% { top: 0px; left: 600px; background: white; }
-            0% { top: 0px; left: 500px; background: grey; }
+        @keyframes mueveMulticolor {
+            0% { top: 0px; left: 475px; background: pink; }
+            20% { top: 0px; left: 575px; background: white; }
+            40% { top: 0px; left: 675px; background: skyblue; }
+            60% { top: 0px; left: 575px; background: white; }
+            100% { top: 0px; left: 475px; background: pink; }
         }
 
         @keyframes crece {
